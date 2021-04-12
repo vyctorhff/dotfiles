@@ -48,8 +48,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 colorscheme gruvbox
-"set background=dark
-set background=light
+set background=dark
+"set background=light
 
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_extra_types = 1
