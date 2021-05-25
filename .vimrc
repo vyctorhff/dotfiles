@@ -47,6 +47,8 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
+"colorscheme morning
+"colorscheme dracula
 colorscheme gruvbox
 set background=dark
 "set background=light
