@@ -18,6 +18,7 @@ set undofile
 set incsearch
 set notermguicolors
 set scrolloff=8
+set cursorline
 
 set backspace=indent,eol,start
 
