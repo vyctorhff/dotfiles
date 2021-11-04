@@ -45,6 +45,7 @@ Plug 'tpope/vim-surround'
 
 Plug 'junegunn/seoul256.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'MattesGroeger/vim-bookmarks'
 
 call plug#end()
 
@@ -82,13 +83,16 @@ let g:netrw_winsize = 25
 
 let mapleader = " "
 
+nnoremap <F2> :update<CR>
+nnoremap <F3> :ls<CR>
+
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>w :update<CR>
-
-nnoremap <F3> :ls<CR>
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<Esc>
 
 " Undotree
 nnoremap <leader>u :UndotreeShow<CR>
@@ -124,8 +128,4 @@ nnoremap <leader>cr :CocRestart
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
-
-abbr pyb1 {%%}
-abbr pyb2 {%%}{%%}
-abbr pyb3 {{}}
 
