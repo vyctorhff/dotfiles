@@ -25,10 +25,11 @@ set backspace=indent,eol,start
 call plug#begin()
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tweekmonster/gofmt.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
+Plug 'tweekmonster/gofmt.vim'
+Plug 'tpope/vim-fugitive'
+
 Plug 'preservim/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -49,26 +50,25 @@ Plug 'MattesGroeger/vim-bookmarks'
 
 call plug#end()
 
-"colorscheme morning
 "colorscheme dracula
-colorscheme gruvbox
-set background=dark
 "set background=light
+"colorscheme gruvbox
+"set background=dark
 
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_types = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_generate_tags = 1
-let g:go_highlight_format_strings = 1
-let g:go_highlight_variable_declarations = 1
-let g:go_auto_sameids = 1
+"let g:go_highlight_build_constraints = 1
+"let g:go_highlight_extra_types = 1
+"let g:go_highlight_fields = 1
+"let g:go_highlight_functions = 1
+"let g:go_highlight_methods = 1
+"let g:go_highlight_operators = 1
+"let g:go_highlight_structs = 1
+"let g:go_highlight_types = 1
+"let g:go_highlight_function_parameters = 1
+"let g:go_highlight_function_calls = 1
+"let g:go_highlight_generate_tags = 1
+"let g:go_highlight_format_strings = 1
+"let g:go_highlight_variable_declarations = 1
+"let g:go_auto_sameids = 1
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -77,9 +77,9 @@ endif
 let loaded_matchparen = 1
 let g:vrfr_rg = 'true'
 
-let g:netrw_browse_split = 2
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
+"let g:netrw_browse_split = 2
+"let g:netrw_banner = 0
+"let g:netrw_winsize = 25
 
 let mapleader = " "
 
@@ -100,7 +100,7 @@ nnoremap <C-p> :GFiles<CR>
 nnoremap <Leader>pf :Files<CR>
 
 " NerdTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <F4> :NERDTreeToggle<CR>
 nnoremap <Leader>rr :NERDTreeRefreshRoot<CR>
 let NERDTreeShowHidden=1
 
@@ -110,18 +110,18 @@ nnoremap <Leader>ps :Rg<SPACE>
 
 
 " Coc
-"nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <leader>gg :call CocAction('jumpDefinition', 'split')<CR>
 nmap <leader>gt :call CocAction('jumpDefinition', 'tabe')<CR>
-nmap <leader>rr <Plug>(coc-rename)
-nmap <leader>g[ <Plug>(coc-diagnostic-prev)
-nmap <leader>g] <Plug>(coc-diagnostic-next)
-"nmap <leader>gy <Plug>(coc-type-definition)
-"nmap <leader>gi <Plug>(coc-implementation)
-"nmap <leader>gr <Plug>(coc-references)
-nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
+"nmap <leader>rr <Plug>(coc-rename)
+"nmap <leader>g[ <Plug>(coc-diagnostic-prev)
+"nmap <leader>g] <Plug>(coc-diagnostic-next)
+nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gr <Plug>(coc-references)
+"nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
+"nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
 nnoremap <leader>cr :CocRestart
 
 " FuGITive
