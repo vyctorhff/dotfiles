@@ -107,12 +107,13 @@ nnoremap <Leader>ps :Rg<SPACE>
 nmap <leader>gd :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <leader>gg :call CocAction('jumpDefinition', 'split')<CR>
 nmap <leader>gt :call CocAction('jumpDefinition', 'tabe')<CR>
+nmap <F2> :call CocAction('doHover')<CR>
 nmap <leader>rr <Plug>(coc-rename)
 nmap <leader>g[ <Plug>(coc-diagnostic-prev)
 nmap <leader>g] <Plug>(coc-diagnostic-next)
-"nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gy <Plug>(coc-type-definition)
 "nmap <leader>gi <Plug>(coc-implementation)
-"nmap <leader>gr <Plug>(coc-references)
+nmap <leader>gr <Plug>(coc-references)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
 nnoremap <leader>cr :CocRestart
