@@ -26,8 +26,3 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export MV_HOME=/opt/desenv/java/maven/apache-maven-3.6.3
-export GRADLE_HOME=/opt/desenv/java/gradle/gradle-6.1.1/
-
-export PATH=$PATH:$MV_HOME/bin;$GRADLE_HOME/bin/gradle
-
