@@ -52,8 +52,8 @@ call plug#end()
 
 "colorscheme dracula
 "set background=light
-"colorscheme gruvbox
-"set background=dark
+colorscheme gruvbox
+set background=dark
 
 if executable('rg')
     let g:rg_derive_root='true'
